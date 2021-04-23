@@ -2,6 +2,7 @@ const Mate = Math;
 Mate.aletorio = Math.random;
 const documento = document;
 documento.crearElemento = document.createElement;
+documento.seleccionador = document.querySelector;
 const anchuraIntera = innerWidth;
 
 const Objeto = Object;

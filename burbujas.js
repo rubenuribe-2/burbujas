@@ -26,23 +26,21 @@ class Burbuja{
     elemento.añadirNiño(esto.elem);
   }
 }
-class Bubbles{
+class Burbujas{
   constructor(root){
     const esto = this;
     esto.root = root;
-    // console.log(this.root);
 
     esto.añadirBurbuja = esto.añadirBurbuja.bind(esto);
     repetir(esto.añadirBurbuja, 500);
   }
   añadirBurbuja(){
     
-    // console.log(this);
+
     const esto = this;
     const burbuja = new Burbuja();
     burbuja.añadir(esto.root);
     
   }
 }
-bubble_manager = new Bubbles(document.querySelector('pantalla'));
-// setInterval(bubble_manager.addBubble,50);
+director_de_burbujas = new Burbujas(documento.seleccionador('pantalla'));
